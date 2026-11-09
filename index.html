@@ -120,6 +120,22 @@
   .team .vis.shot { background: radial-gradient(circle at 50% 45%, #1d2340 0%, #0f0f12 70%); }
   .team .vis.shot img { width: 720px; height: auto; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.55); }
 
+
+  /* 사업 둘째 장(숫자·모델·다음) */
+  .biz .head { display: flex; align-items: center; gap: 32px; }
+  .biz .logo.sq { height: 84px; border-radius: 14px; display: block; }
+  .biz .logo.wm { height: 56px; display: block; }
+  .biz h2 { font-size: 64px; margin-top: 52px; }
+  .biz .cols { position: absolute; left: 0; right: 0; bottom: 10px; display: grid; grid-template-columns: 1fr 620px; gap: 0 110px; align-items: end; }
+  .biz .mt > div { display: grid; grid-template-columns: 330px 1fr; align-items: baseline; gap: 0 28px; padding: 24px 0; border-top: 1px solid var(--line); }
+  .biz .mt .v { font-family: var(--display); font-size: 54px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; white-space: nowrap; }
+  .biz .mt .k { font-size: 30px; color: var(--subtle); line-height: 1.4; }
+  .biz .side h4 { font-size: 24px; font-weight: 600; color: var(--accent-text); letter-spacing: .02em; padding-bottom: 12px; }
+  .biz .side h4 ~ h4 { margin-top: 34px; }
+  .biz .side p { font-size: 30px; line-height: 1.45; color: var(--subtle); padding: 14px 0; border-top: 1px solid var(--line); }
+  .biz .side p.t { display: grid; grid-template-columns: 112px 1fr; gap: 0 12px; }
+  .biz .side p b { color: var(--fg); font-weight: 700; font-family: var(--display); }
+
   /* 다음 */
   #next h2 { margin-top: 40px; }
   .rows { position: absolute; left: 0; right: 0; bottom: 30px; }
@@ -248,13 +264,37 @@
     <h2>폰 카메라 한 번으로<br>자세를 측정해 기록하는 앱</h2>
     <div class="pr">
       <div><span>문제</span><span>근골격 통증으로 1년에 8.2번 병원에 가도,<br>왜 아픈지는 듣지 못합니다.</span></div>
-      <div><span>해결</span><span>촬영하면 AI가 자세를 분석하고 변화를 추적합니다.<br>9월 Shellog로 Android·iOS에 출시했습니다.</span></div>
+      <div><span>해결</span><span>촬영하면 AI가 자세를 분석하고 변화를 추적합니다.<br>Shellog라는 이름으로 Android·iOS에 출시했습니다.</span></div>
       <div><span>기술</span><span>Expo·React Native, 온디바이스 MoveNet,<br>서버 RTMPose와 MediaPipe 듀얼 엔진</span></div>
     </div>
     <div class="kbox"><div class="kpi">96.8%</div><div class="kcap">관절 위치 정밀도(PCK@0.10, COCO 기준) · 업계 평균 95%</div></div>
   </div>
   <div class="vis phones cards"><img src="assets/shellog-01-test.png" alt=""><img src="assets/shellog-04-verdict.png" alt=""></div>
   <div class="cap vcap">Shellog: 필라테스 & 자세 교정 · 스토어 화면</div>
+</section>
+
+<!-- 6-2 BodyBalancer 지금 -->
+<section class="slide biz" id="b-bb">
+  <div class="pad">
+    <div class="head"><img class="logo sq" src="assets/bodybalancer.png" alt="BodyBalancer"><div class="label">BodyBalancer · Now</div></div>
+    <h2>자세 분석에서,<br>매일 여는 필라테스 앱으로</h2>
+    <div class="cols">
+      <div class="mt">
+        <div><span class="v">20인</span><span class="k">전문가 인터뷰<br>(물리치료사·의사·교수·필라테스 강사)</span></div>
+        <div><span class="v">50명+</span><span class="k">인천 청년 창업 마켓 부스 현장 측정</span></div>
+        <div><span class="v">100명+</span><span class="k">네이버 척추 카페 베타 실사용 회원</span></div>
+        <div><span class="v">S등급</span><span class="k">Y-Compass 2026, 35팀 중 상위 5팀<br>모두의창업 1라운드 선정</span></div>
+      </div>
+      <div class="side">
+        <h4>사업 모델</h4>
+        <p>분석과 기록은 무료,<br>해석과 개인화 코칭은 구독</p>
+        <h4>다음</h4>
+        <p class="t"><b>11월</b><span>구독 판매 시작</span></p>
+        <p class="t"><b>4주</b><span>영어권 4개국 설치 광고로<br>설치 단가·체험·결제율 검증</span></p>
+        <p class="t"><b>그다음</b><span>필라테스·PT 시설로 확장</span></p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- 7 MYRO -->
@@ -265,12 +305,36 @@
     <div class="pr">
       <div><span>문제</span><span>자기관리를 하고 싶어도 무엇부터 할지 모르는<br>20~35세 남성이 많습니다(사전 설문 56명).</span></div>
       <div><span>해결</span><span>고민을 고르면 AI가 루틴을 짜고 분야별 전문가가 검수한 후,<br>습관이 될 때까지 관리합니다.</span></div>
-      <div><span>기술</span><span>AI 얼굴 분석 진단, AI 루틴 생성과 전문가 검수,<br>이탈 감지 알림</span></div>
+      <div><span>기술</span><span>Flask(Railway) 백엔드, GitHub Pages 프런트엔드,<br>Claude 기반 얼굴 분석, n8n 콘텐츠 자동화</span></div>
     </div>
-    <div class="kbox"><div class="kpi">189K</div><div class="kcap">광고비 0원으로 8주 동안 올린 콘텐츠 조회수 · 베타 10명 전원 유료 가입</div></div>
+    <div class="kbox"><div class="kpi">190K</div><div class="kcap">광고비 0원으로 8주 동안 올린 Instagram·Threads 콘텐츠 조회수</div></div>
   </div>
   <div class="vis phones"><img src="assets/myro-1.png" alt=""><img src="assets/myro-2.png" alt=""></div>
-  <div class="cap vcap">자료: MYRO 43기 데모데이 발표</div>
+  <div class="cap vcap">자료: MYRO IR 덱(2026. 9. 21)</div>
+</section>
+
+<!-- 7-2 MYRO 트랙션 -->
+<section class="slide biz" id="b-myro">
+  <div class="pad">
+    <div class="head"><img class="logo sq" src="assets/MYRO.png" alt="MYRO"><div class="label">MYRO · Traction</div></div>
+    <h2>광고 없이 모은<br>첫 사용자 102명</h2>
+    <div class="cols">
+      <div class="mt">
+        <div><span class="v">17.9%</span><span class="k">랜딩 방문에서 베타 신청까지<br>(랜딩페이지 업계 중앙값 6.6%)</span></div>
+        <div><span class="v">10/10</span><span class="k">베타 사용자 전원이 정식 1기 얼리버드 가입</span></div>
+        <div><span class="v">102명</span><span class="k">9/20 기준 유기 유입 사용자</span></div>
+        <div><span class="v">145,000원</span><span class="k">9/20 기준 누적 매출</span></div>
+      </div>
+      <div class="side">
+        <h4>사업 모델</h4>
+        <p>1주 무료 체험 후<br>섹션 하나 9,900원, 묶음 29,900원</p>
+        <p>전문가 1:1 케어 2주 34,900원</p>
+        <p>B2B: 제휴 커머스, 전문가 SaaS,<br>브랜드 스폰서십</p>
+        <h4>팀</h4>
+        <p>1인 창업(기획·개발·마케팅)<br>프런트엔드·리서치 1명씩 합류 예정</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- 8 10to10 -->
@@ -292,19 +356,44 @@
 <!-- 9 SUBOOK -->
 <section class="slide team" id="t-subook">
   <div class="pad">
-    <div class="head"><img class="logo wm" src="assets/logo_h_white.png" alt="SUBOOK"><div class="label">Alumni Vol.42 · <span class="ko">42기 데모데이 최우수상</span></div></div>
+    <div class="head"><img class="logo wm" src="assets/logo_h_white.png" alt="SUBOOK"><div class="label">Alumni Vol.42 · <span class="ko">43기 데모데이 IR 발표</span></div></div>
     <h2>다 쓰지 못한 수능 교재를<br>다음 수험생에게</h2>
     <div class="pr">
       <div><span>문제</span><span>수험생의 92%가 교재를 버리거나 방치합니다<br>(자체 조사 217명).</span></div>
       <div><span>해결</span><span>집 앞에 내놓으면 수거·검수·판매를 대신하고,<br>구매자는 S급 교재를 정가의 40~70%에 삽니다.</span></div>
       <div><span>기술</span><span>React Native 카메라, YOLOv8, Google Vision,<br>Elasticsearch로 권당 등록 5.2분을 8초로</span></div>
     </div>
-    <div class="kbox"><div class="kpi">800<small>만 원+</small></div><div class="kcap">5개월 테스트 매출 · MAU 3,000명 이상 · 재주문율 29.2%</div></div>
+    <div class="kbox"><div class="kpi">2,000<small>만 원+</small></div><div class="kcap">누적 매출 · 2개월 사이 월 매출 5배</div></div>
   </div>
   <div class="vis shot"><img src="assets/subook-web.jpg" alt=""></div>
-  <div class="cap vcap">자료: SUBOOK 43기 데모데이 발표</div>
+  <div class="cap vcap">자료: SUBOOK 최신 소개 자료</div>
 </section>
 
+
+<!-- 9-2 SUBOOK 트랙션 -->
+<section class="slide biz" id="b-subook">
+  <div class="pad">
+    <div class="head"><img class="logo wm" src="assets/logo_h_white.png" alt="SUBOOK"><div class="label">SUBOOK · Traction</div></div>
+    <h2>학원에서 걷어 와,<br>전국 수험생에게</h2>
+    <div class="cols">
+      <div class="mt">
+        <div><span class="v">69.1%</span><span class="k">서울 밖 지역에서 들어온 주문 비중</span></div>
+        <div><span class="v">10개 지점</span><span class="k">잇올 스파르타·에듀플렉스 수거 파트너<br>10월부터 매주 1천 권+ 정기 수거</span></div>
+        <div><span class="v">6,000권+</span><span class="k">보유 재고, 99%가 새 교재</span></div>
+        <div><span class="v">29.6%</span><span class="k">재주문율 · 주문당 평균 47,100원</span></div>
+      </div>
+      <div class="side">
+        <h4>사업 모델</h4>
+        <p>개인 교재 위탁 판매, 수수료 약 42%</p>
+        <p>학원 교재 권당 100원 직매입<br>주문당 공헌이익률 71.8%</p>
+        <h4>다음</h4>
+        <p class="t"><b>수능 후</b><span>학원 교재 2~3만 권 수거 예정</span></p>
+        <p class="t"><b>12~1월</b><span>Pre-Seed 2억 원 유치 계획</span></p>
+        <p class="t"><b>2027</b><span>앱 출시, B2B 파트너 100곳</span></p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- 10 진행 예정 -->
 <section class="slide" id="next">
@@ -342,7 +431,7 @@
   addEventListener('resize', fit); fit();
 
   // 장마다 떠오를 요소를 문서 순서대로 고른다(조상이 이미 골라진 요소는 뺀다)
-  const SEL = '.mark, .label, .head, h1, h2, .lead, .sub, .by, .tl .pt, .kpi, .kcap, .note, table.t5 tr, .names span, .pr > div, .kbox, .vis, .rows .r, .cap';
+  const SEL = '.mark, .label, .head, h1, h2, .lead, .sub, .by, .tl .pt, .kpi, .kcap, .note, table.t5 tr, .names span, .pr > div, .kbox, .vis, .rows .r, .cap, .mt > div, .side > *';
   for (const sl of slides) {
     const picked = [];
     for (const el of sl.querySelectorAll(SEL)) {
