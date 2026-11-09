@@ -116,7 +116,7 @@
   .team .vis.phones { gap: 36px; background: radial-gradient(circle at 50% 45%, #1d2340 0%, #0f0f12 70%); }
   .team .vis.phones img { width: 340px; height: auto; filter: drop-shadow(0 30px 60px rgba(0,0,0,.55)); }
   .team .vis.phones img:last-child { transform: translateY(70px); }
-  .team .vis.cards img { width: 360px; border-radius: 22px; filter: none; box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+  .team .vis.bb { background: radial-gradient(circle at 50% 45%, #183a33 0%, #0f0f12 70%); }
   .team .vis.shot { background: radial-gradient(circle at 50% 45%, #1d2340 0%, #0f0f12 70%); }
   .team .vis.shot img { width: 720px; height: auto; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.55); }
 
@@ -261,37 +261,38 @@
 <section class="slide team" id="t-bb">
   <div class="pad">
     <div class="head"><img class="logo sq" src="assets/bodybalancer.png" alt="BodyBalancer"><div class="label">Demo Day Vol.43 · Member Team</div></div>
-    <h2>폰 카메라 한 번으로<br>자세를 측정해 기록하는 앱</h2>
+    <h2>자세 변화가 숫자로 보이는<br>필라테스 앱, Shellog</h2>
     <div class="pr">
-      <div><span>문제</span><span>근골격 통증으로 1년에 8.2번 병원에 가도,<br>왜 아픈지는 듣지 못합니다.</span></div>
-      <div><span>해결</span><span>촬영하면 AI가 자세를 분석하고 변화를 추적합니다.<br>Shellog라는 이름으로 Android·iOS에 출시했습니다.</span></div>
-      <div><span>기술</span><span>Expo·React Native, 온디바이스 MoveNet,<br>서버 RTMPose와 MediaPipe 듀얼 엔진</span></div>
+      <div><span>문제</span><span>필라테스를 몇 달 해도,<br>자세가 달라졌는지는 모릅니다.</span></div>
+      <div><span>해결</span><span>옆모습 사진 한 장으로 60초 측정, 하루 7분 클래스,<br>일주일마다 같은 기준으로 다시 측정합니다.</span></div>
+      <div><span>기술</span><span>Expo·React Native, 온디바이스 MoveNet,<br>서버 RTMPose와 MediaPipe 하이브리드 엔진</span></div>
     </div>
-    <div class="kbox"><div class="kpi">96.8%</div><div class="kcap">관절 위치 정밀도(PCK@0.10, COCO 기준) · 업계 평균 95%</div></div>
+    <div class="kbox"><div class="kpi">96.8%</div><div class="kcap">관절 위치 정밀도(PCK@0.10, COCO, n=777) · 범용 엔진보다 8.3%p 높음</div></div>
   </div>
-  <div class="vis phones cards"><img src="assets/shellog-01-test.png" alt=""><img src="assets/shellog-04-verdict.png" alt=""></div>
-  <div class="cap vcap">Shellog: 필라테스 & 자세 교정 · 스토어 화면</div>
+  <div class="vis phones bb"><img src="assets/bb-mock-1.png" alt=""><img src="assets/bb-mock-2.png" alt=""></div>
+  <div class="cap vcap">앱 화면은 시연 데이터입니다</div>
 </section>
 
 <!-- 6-2 BodyBalancer 지금 -->
 <section class="slide biz" id="b-bb">
   <div class="pad">
-    <div class="head"><img class="logo sq" src="assets/bodybalancer.png" alt="BodyBalancer"><div class="label">BodyBalancer · Now</div></div>
-    <h2>자세 분석에서,<br>매일 여는 필라테스 앱으로</h2>
+    <div class="head"><img class="logo sq" src="assets/bodybalancer.png" alt="BodyBalancer"><div class="label">BodyBalancer · Traction</div></div>
+    <h2>스토어 출시를 마치고,<br>결제 공개를 앞두고 있습니다</h2>
     <div class="cols">
       <div class="mt">
-        <div><span class="v">20인</span><span class="k">전문가 인터뷰<br>(물리치료사·의사·교수·필라테스 강사)</span></div>
-        <div><span class="v">50명+</span><span class="k">인천 청년 창업 마켓 부스 현장 측정</span></div>
+        <div><span class="v">2번</span><span class="k">App Store·Google Play 출시<br>9월 BodyBalancer, 10월 Shellog 2.0</span></div>
         <div><span class="v">100명+</span><span class="k">네이버 척추 카페 베타 실사용 회원</span></div>
-        <div><span class="v">S등급</span><span class="k">Y-Compass 2026, 35팀 중 상위 5팀<br>모두의창업 1라운드 선정</span></div>
+        <div><span class="v">50명+</span><span class="k">인천 청년 창업 마켓 부스 현장 측정</span></div>
+        <div><span class="v">최우수상</span><span class="k">VERY 43기 데모데이 · Y-Compass 2026 S등급<br>IHEI 워크스테이션 선정 · 모두의창업 1라운드</span></div>
       </div>
       <div class="side">
-        <h4>사업 모델</h4>
-        <p>분석과 기록은 무료,<br>해석과 개인화 코칭은 구독</p>
+        <h4>가격</h4>
+        <p>첫 주 무료, 2주차부터 결제 제안</p>
+        <p>연간 99,000원(2주 무료 체험)<br>월간 14,900원 · 평생권 29,000원</p>
         <h4>다음</h4>
-        <p class="t"><b>11월</b><span>구독 판매 시작</span></p>
-        <p class="t"><b>4주</b><span>영어권 4개국 설치 광고로<br>설치 단가·체험·결제율 검증</span></p>
-        <p class="t"><b>그다음</b><span>필라테스·PT 시설로 확장</span></p>
+        <p class="t"><b>11월</b><span>구독 판매 공개</span></p>
+        <p class="t"><b>4주</b><span>영어권 4개국 광고로<br>설치 단가·체험·결제율 검증</span></p>
+        <p class="t"><b>그다음</b><span>강사 클래스, 기업 복지 구독</span></p>
       </div>
     </div>
   </div>
@@ -356,7 +357,7 @@
 <!-- 9 SUBOOK -->
 <section class="slide team" id="t-subook">
   <div class="pad">
-    <div class="head"><img class="logo wm" src="assets/logo_h_white.png" alt="SUBOOK"><div class="label">Alumni Vol.42 · <span class="ko">43기 데모데이 IR 발표</span></div></div>
+    <div class="head"><img class="logo wm" src="assets/logo_h_white.png" alt="SUBOOK"><div class="label">Alumni Vol.42 · <span class="ko">42기 데모데이 대상</span></div></div>
     <h2>다 쓰지 못한 수능 교재를<br>다음 수험생에게</h2>
     <div class="pr">
       <div><span>문제</span><span>수험생의 92%가 교재를 버리거나 방치합니다<br>(자체 조사 217명).</span></div>
