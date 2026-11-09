@@ -156,7 +156,7 @@
     body:not(.present) .deck { zoom: var(--z, 1); margin: 0 auto; }
     body:not(.present) .slide { margin: 0 auto 24px; box-shadow: 0 0 0 1px rgba(255,255,255,.06); }
   }
-  @media print { body { padding: 0; } .deck { zoom: 1 !important; } .slide { margin: 0; box-shadow: none; } }
+  @media print { body { padding: 0; } .deck { zoom: 1 !important; } .slide { margin: 0; box-shadow: none; } .slide::after { display: none; } }
 
   /* 발표 모드: 한 장씩, 화면에 맞춰 확대, 들어올 때 요소가 차례로 떠오른다 */
   :root { --ease: cubic-bezier(0.16, 1, 0.3, 1); }
