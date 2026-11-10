@@ -53,7 +53,7 @@
   #about .lead { margin-top: 36px; max-width: 1320px; }
   .tl { position: absolute; left: 0; right: 0; bottom: 70px; height: 230px; }
   .tl .rail { position: absolute; top: 18px; height: 2px; background: var(--line-strong); }
-  .tl .pt { position: absolute; top: 0; width: 400px; transform: translateX(-50%); text-align: center; }
+  .tl .pt { position: absolute; top: 0; width: 330px; transform: translateX(-50%); text-align: center; }
   .tl .dot { width: 38px; height: 38px; border-radius: 50%; margin: 0 auto; background: var(--bg); border: 2px solid var(--subtle); }
   .tl .pt.on .dot { background: var(--accent); border-color: var(--accent); }
   .tl .m { font-family: var(--display); font-size: 26px; color: var(--muted); margin-top: 26px; letter-spacing: .02em; }
@@ -75,6 +75,17 @@
   /* 프리토타이핑 */
   #preto h2 { margin-top: 40px; }
   #preto .lead { margin-top: 26px; }
+  #hack h2 { margin-top: 40px; }
+  #hack .lead { margin-top: 28px; }
+  #hack .hk { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 60px; margin-top: 64px; }
+  #hack .hk .kpi { font-size: 120px; }
+  #hack .hk .kpi small { font-family: var(--sans); font-size: 48px; font-weight: 700; margin-left: 6px; letter-spacing: 0; }
+  #hack .hk .kcap { font-size: 30px; color: var(--subtle); margin-top: 18px; line-height: 1.4; }
+  #hack .rows .r { grid-template-columns: 300px 1fr; padding: 26px 0; align-items: baseline; }
+  #hack .rows .r .dt { font-size: 32px; }
+  #hack .rows .r .x { margin-top: 0; }
+  #hack .rows .x b { color: var(--fg); font-weight: 600; margin-right: 14px; }
+  #hack .rows .x b.g { margin-left: 36px; }
   table.t5 { position: absolute; left: 0; width: 100%; bottom: 40px; border-collapse: collapse; font-size: 32px; }
   table.t5 th { text-align: left; font-weight: 500; font-size: 24px; color: var(--muted); padding: 0 0 16px; border-bottom: 1px solid var(--line-strong); }
   table.t5 td { padding: 21px 0; border-bottom: 1px solid var(--line); color: var(--subtle); }
@@ -207,11 +218,12 @@
     <h2>1997년부터 이어 온<br>연세대학교 창업학회</h2>
     <p class="lead">아이디어의 답은 고객에게 있습니다.<br><b>직접 내놓고 반응을 보는 데까지</b>가 한 학기입니다.</p>
     <div class="tl">
-      <div class="rail" style="left:12.5%;right:12.5%"></div>
-      <div class="pt on" style="left:12.5%"><div class="dot"></div><div class="m">SEP</div><div class="t">10만플</div><div class="d">10만 원으로 2주 매출</div></div>
-      <div class="pt on" style="left:37.5%"><div class="dot"></div><div class="m">OCT</div><div class="t">프리토타이핑</div><div class="d">만들기 전 수요 검증</div></div>
-      <div class="pt on" style="left:62.5%"><div class="dot"></div><div class="m">NOV</div><div class="t">아이디어톤</div><div class="d">데모데이 팀 결성</div></div>
-      <div class="pt" style="left:87.5%"><div class="dot"></div><div class="m">JAN</div><div class="t">데모데이</div><div class="d">팀별 결과 발표</div></div>
+      <div class="rail" style="left:10%;right:10%"></div>
+      <div class="pt on" style="left:10%"><div class="dot"></div><div class="m">SEP</div><div class="t">10만플</div><div class="d">10만 원으로 2주 매출</div></div>
+      <div class="pt on" style="left:30%"><div class="dot"></div><div class="m">OCT</div><div class="t">프리토타이핑</div><div class="d">만들기 전 수요 검증</div></div>
+      <div class="pt on" style="left:50%"><div class="dot"></div><div class="m">OCT 31</div><div class="t">연합 해커톤</div><div class="d">고려대 NEXT와 24시간</div></div>
+      <div class="pt on" style="left:70%"><div class="dot"></div><div class="m">NOV</div><div class="t">아이디어톤</div><div class="d">데모데이 팀 결성</div></div>
+      <div class="pt" style="left:90%"><div class="dot"></div><div class="m">JAN</div><div class="t">데모데이</div><div class="d">팀별 결과 발표</div></div>
     </div>
   </div>
 </section>
@@ -244,6 +256,24 @@
       <tr><td>믿고멍냥</td><td>반려동물 사료 큐레이션</td><td>방문 376명 · 샘플 신청 4건</td></tr>
       <tr><td>NoWait</td><td>성수 노웨이팅 맛집 지도</td><td>방문 96명 · 신청 2건</td></tr>
     </table>
+  </div>
+</section>
+
+<!-- 4-2 연합 해커톤 -->
+<section class="slide" id="hack">
+  <div class="pad">
+    <div class="label">Oct 31 – Nov 1 · VERY × NEXT Hackathon</div>
+    <h2>고려대 NEXT와 24시간,<br>돈 내고 쓸 서비스를 만든다</h2>
+    <p class="lead">두 학회 회원과 알럼나이가 섞인 12개 팀이 고객 문제를 직접 찾아<br>서비스를 만들고, 배포 링크까지 제출했습니다.</p>
+    <div class="hk">
+      <div><div class="kpi">24<small>시간</small></div><div class="kcap">10. 31 정오부터 11. 1 정오까지</div></div>
+      <div><div class="kpi">12<small>팀</small></div><div class="kcap">VERY · NEXT · 알럼나이 혼합 팀</div></div>
+      <div><div class="kpi">3<small>개 트랙</small></div><div class="kcap">소상공인 · 학부모 · 마이크로 크리에이터</div></div>
+    </div>
+    <div class="rows">
+      <div class="r"><div class="dt">심사 기준</div><div class="x">구현 40 · 문제 정의 25 · 비즈니스 25 · 발표 10</div></div>
+      <div class="r"><div class="dt">함께한 곳</div><div class="x"><b>멘토·심사</b>AWS · 카페24 · 래티스 · Sume · 스페이스점프 <b class="g">장소</b>단군소프트</div></div>
+    </div>
   </div>
 </section>
 
