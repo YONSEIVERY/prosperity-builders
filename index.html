@@ -159,7 +159,9 @@
   #end { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
   #end .mark { height: 120px; }
   #end h2 { font-size: 96px; margin-top: 70px; }
-  #end .sub { font-size: 36px; color: var(--subtle); margin-top: 28px; font-family: var(--display); letter-spacing: .02em; }
+  #end .qrs { display: flex; gap: 120px; margin-top: 72px; }
+  #end .qr img { display: block; width: 230px; height: 230px; border-radius: 18px; margin: 0 auto; }
+  #end .qr span { display: block; margin-top: 20px; font-size: 30px; color: var(--subtle); font-family: var(--display); letter-spacing: .02em; }
 
   /* 미리보기(발표 모드가 아닐 때): 장을 세로로 늘어놓는다 */
   @media screen {
@@ -469,7 +471,10 @@
 <section class="slide" id="end">
   <img class="mark" src="assets/very-mark.png" alt="VERY">
   <h2>감사합니다</h2>
-  <div class="sub">yonseivery.com</div>
+  <div class="qrs">
+    <div class="qr"><img src="assets/qr-site.svg" alt="yonseivery.com QR"><span>yonseivery.com</span></div>
+    <div class="qr"><img src="assets/qr-insta.svg" alt="Instagram @very_yonsei QR"><span>Instagram @very_yonsei</span></div>
+  </div>
 </section>
 
 </div>
@@ -488,7 +493,7 @@
   addEventListener('resize', fit); fit();
 
   // 장마다 떠오를 요소를 문서 순서대로 고른다(조상이 이미 골라진 요소는 뺀다)
-  const SEL = '.mark, .label, .head, h1, h2, .lead, .sub, .by, .tl .pt, .kpi, .kcap, .note, table.t5 tr, .names span, .pr > div, .kbox, .vis, .rows .r, .cap, .mt > div, .side > *';
+  const SEL = '.mark, .label, .head, h1, h2, .lead, .sub, .by, .tl .pt, .kpi, .kcap, .note, table.t5 tr, .names span, .pr > div, .kbox, .vis, .rows .r, .cap, .mt > div, .side > *, .qr';
   for (const sl of slides) {
     const picked = [];
     for (const el of sl.querySelectorAll(SEL)) {
