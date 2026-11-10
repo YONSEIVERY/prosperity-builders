@@ -137,13 +137,17 @@
   .biz .logo.sq { height: 84px; border-radius: 14px; display: block; }
   .biz .logo.wm { height: 56px; display: block; }
   .biz h2 { font-size: 64px; margin-top: 52px; }
-  .biz .cols { position: absolute; left: 0; right: 0; bottom: 10px; display: grid; grid-template-columns: 1fr 620px; gap: 0 110px; align-items: end; }
-  .biz .mt > div { display: grid; grid-template-columns: 330px 1fr; align-items: baseline; gap: 0 28px; padding: 24px 0; border-top: 1px solid var(--line); }
-  .biz .mt .v { font-family: var(--display); font-size: 54px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; white-space: nowrap; }
+  /* 두 열은 같은 위아래 선에서 시작하고 끝난다. 왼쪽 행은 같은 높이로 나누고 내용은 행 가운데 */
+  .biz .cols { position: absolute; left: 0; right: 0; top: 330px; bottom: 0; display: grid; grid-template-columns: 1fr 620px; gap: 0 110px; align-items: stretch; }
+  .biz .mt { display: flex; flex-direction: column; border-bottom: 1px solid var(--line); }
+  .biz .mt > div { flex: 1 1 0; min-height: 124px; display: grid; grid-template-columns: 330px 1fr; align-items: center; gap: 0 28px; border-top: 1px solid var(--line); }
+  .biz .mt .v { font-family: var(--display); font-size: 54px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; white-space: nowrap; }
   .biz .mt .k { font-size: 30px; color: var(--subtle); line-height: 1.4; }
-  .biz .side h4 { font-size: 24px; font-weight: 600; color: var(--accent-text); letter-spacing: .02em; padding-bottom: 12px; }
-  .biz .side h4 ~ h4 { margin-top: 34px; }
-  .biz .side p { font-size: 30px; line-height: 1.45; color: var(--subtle); padding: 14px 0; border-top: 1px solid var(--line); }
+  .biz .side { padding-top: 10px; }
+  .biz .side h4 { font-size: 24px; font-weight: 600; color: var(--accent-text); letter-spacing: .02em; line-height: 1; padding-bottom: 12px; }
+  .biz .side h4 ~ h4 { margin-top: 22px; }
+  .biz .side p { font-size: 30px; line-height: 1.35; color: var(--subtle); padding: 0 0 18px; }
+  .biz .side p:last-child { padding-bottom: 0; }
   .biz .side p.t { display: grid; grid-template-columns: 112px 1fr; gap: 0 12px; }
   .biz .side p b { color: var(--fg); font-weight: 700; font-family: var(--display); }
 
